@@ -1,13 +1,12 @@
-// import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import  Todomain  from './FunctionalCompo/Todomain'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       REACT PROJECT 
-      </header>
-    </div>
+   <>
+   <Todomain/>
+   </>
   );
 }
 
