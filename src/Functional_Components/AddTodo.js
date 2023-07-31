@@ -6,8 +6,8 @@ import "../App.css"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-
-const AddTodo = (prop) => { //destructioning used
+ 
+const AddTodo = (prop) => { 
 
   const [addTodo, stateupdatefn] = useState();
 
@@ -40,7 +40,6 @@ const AddTodo = (prop) => { //destructioning used
     </>
   )
 }
-
 
 
 export default AddTodo;

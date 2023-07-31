@@ -5,14 +5,18 @@ import Table from 'react-bootstrap/Table';
 import '../App.css'
 
 
-const Todolist=({tasklist})=>{
+const Todolist = ({ tasklist, markAsDone, clearTodo }) => {
 
+	function doneBtnHandler(id) {
+		markAsDone(id)
+	}
 
-
+	function clearTask(id) {
+		clearTodo(id)
+	}
 
 	return (
 		<>
-		
 			<Table striped bordered hover>
 				<thead >
 					<tr>
@@ -20,24 +24,28 @@ const Todolist=({tasklist})=>{
 						<th>Tasks</th>
 						<th>Action</th>
 
-					</tr> 
+					</tr>
 				</thead>
 				<tbody>
-					{(tasklist || []).map((ele,key) => {//key starts from 0
+					{(tasklist || []).map((ele, key) => {//key starts from 0
 						return (
-							<tr >
-								<td>{key+1}</td>
-								<td>{ele.task}</td>
+							<tr className={ele.status === 3 ? "hidden" : ''}>
+								<td>{key + 1}</td>
+								<td className={ele.status === 2 ? "strikethrough" : ''} >{ele.task}</td>
+
+								<td>
+									<button danger onClick={() => { doneBtnHandler(ele.id) }} className='btn btn-success btn-sm' >Done</button>
+									{/* We are passing current element id(unique data) to the doneBtnHandler so we used arrow fn in button above */}
+									&nbsp;&nbsp;&nbsp;
+									<button danger onClick={() => { clearTask(ele.id) }} className='btn btn-success btn-sm'>Clear</button>
+								</td>
 							</tr>
 						)
 
 					})}
 
-
-
 				</tbody>
 			</Table>
-
 		</>
 	)
 
@@ -47,6 +55,6 @@ const Todolist=({tasklist})=>{
 
 }
 
- 
+
 
 export default Todolist;
