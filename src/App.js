@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import  Todomain  from './FunctionalCompo/Todomain'
+import  Todo  from './Functional_Components/Todo'
 
 function App() {
   return (
    <>
-   <Todomain/>
+   <Todo/>
    </>
   );
 }
