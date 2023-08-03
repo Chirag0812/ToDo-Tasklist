@@ -2,37 +2,58 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-Compo {
+  width: 700px;
+  margin: 100px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-Compo>h1 {
+  align-content: center;
+  width: 780px;
+  margin: 30px auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cont {
+  color: blueviolet;
+  text-align: center;
+  border: 2px solid #7d4ad9;
+  border-radius: 16px;
+  border-width: thick;
+  padding: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.thead-width {
+  width: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hidden {
+  display: none;
+}
+
+/* calc.js */
+.pos-center {
+  margin: 0 auto;
+  margin-top: 137px;
+
+}
+
+.mrginn {
+  text-align: center;
+
+}
+
+.strikethrough {
+  text-decoration:line-through purple solid;
+   
+}
+
+.imgg {
+  background-image: url(./notepad-scissors-copy-space_23-2.jpg);
+  background-size: cover;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
