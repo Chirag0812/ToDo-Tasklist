@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ToDo-Tasklist/static/css/main.3d5a7b7c.css",
+    "main.js": "/ToDo-Tasklist/static/js/main.fbbf0596.js",
+    "static/js/787.38c30564.chunk.js": "/ToDo-Tasklist/static/js/787.38c30564.chunk.js",
+    "static/media/notepad-scissors-copy-space_23-2.jpg": "/ToDo-Tasklist/static/media/notepad-scissors-copy-space_23-2.0d7e6ba14a9539ac4b60.jpg",
+    "index.html": "/ToDo-Tasklist/index.html",
+    "main.3d5a7b7c.css.map": "/ToDo-Tasklist/static/css/main.3d5a7b7c.css.map",
+    "main.fbbf0596.js.map": "/ToDo-Tasklist/static/js/main.fbbf0596.js.map",
+    "787.38c30564.chunk.js.map": "/ToDo-Tasklist/static/js/787.38c30564.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d5a7b7c.css",
+    "static/js/main.fbbf0596.js"
+  ]
+}
