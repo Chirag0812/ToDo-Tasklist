@@ -22,7 +22,7 @@ const Todolist = ({ tasklist, markAsDone, clearTodo }) => {
 					<tr>
 						<th className="thead-width">No.</th>
 						<th>Tasks</th>
-						<th>Action</th>
+						<th>Actions</th>
 
 					</tr>
 				</thead>
@@ -30,7 +30,7 @@ const Todolist = ({ tasklist, markAsDone, clearTodo }) => {
 					{(tasklist || []).map((ele, key) => {//key starts from 0
 						return (
 							<tr className={ele.status === 3 ? "hidden" : ''}>
-								<td>{key + 1}</td>
+								<td className={ele.status === 2 ? "strikethrough" : ''} >{key + 1}</td>
 								<td className={ele.status === 2 ? "strikethrough" : ''} >{ele.task}</td>
 
 								<td>

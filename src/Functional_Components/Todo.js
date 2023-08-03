@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import AddTodo from './AddTodo';
 import Todolist from "./Todolist";
+import '../App.css';
+ 
 
 
 const Todo = () => {
@@ -10,7 +12,7 @@ const Todo = () => {
 
     const [tasklist, updatelist] = useState([])
 
- 
+
     function statechange(text) {
         updatelist([...tasklist, {
             id: Math.random(),
@@ -19,7 +21,7 @@ const Todo = () => {
         }])
     }
 
- //task done function
+    //task done function
     const taskDone = (id) => {
         // update state corresponding to this id - change the status
         //1 - not done, 2 - done, 3 - delete
@@ -32,7 +34,7 @@ const Todo = () => {
         })
         updatelist(temp);
     }
-    
+
     // Task delete function 
     const taskDelete = (id) => {
         // update state corresponding to this id - change the status
@@ -44,21 +46,25 @@ const Todo = () => {
                 return el;
             }
         })
-    
+
         updatelist(tempp);
     }
-    
-    
+
+
     return (
         <>
+            <div className="imgg" >.
+           
             <div className="main-Compo">
-                <h1>ToDo App</h1>
-                <AddTodo update={statechange} />
-                <Todolist tasklist={tasklist } markAsDone={taskDone} clearTodo={taskDelete} />
+                <div className="cont"> <h1>ToDo App</h1>
+                    <AddTodo update={statechange} />
+                    <Todolist tasklist={tasklist} markAsDone={taskDone} clearTodo={taskDelete} />
+                </div> 
             </div>
-       </>
-       )
+      </div>
+        </>
+    )
 
-    }
+}
 
 export default Todo;
